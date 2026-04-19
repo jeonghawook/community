@@ -31,7 +31,7 @@ import { HttpLoggerMiddleware } from 'src/middleware/logger';
   imports: [
     UsersModule,
     MongooseModule.forRoot(
-      'mongodb+srv://Hawook:8785@cluster0.olr8a.mongodb.net/?retryWrites=true&w=majority',
+      
     ),
     TypeOrmModule.forRootAsync({
       useFactory: (configService: ConfigService) => typeORMConfig(configService),
