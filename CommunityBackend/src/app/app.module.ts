@@ -30,9 +30,9 @@ import { HttpLoggerMiddleware } from 'src/middleware/logger';
   ],
   imports: [
     UsersModule,
-    MongooseModule.forRoot(
+    // MongooseModule.forRoot(
       
-    ),
+    // ),
     TypeOrmModule.forRootAsync({
       useFactory: (configService: ConfigService) => typeORMConfig(configService),
       inject: [ConfigService],
